@@ -24,8 +24,8 @@
 
 2. 设置目标函数中待优化参数信息，假设我们x为100维，每个维度在[-10， 10]范围内取值，则目标函数参数信息设置为：
   parms_func = {'x_lb': 0.01, 'x_ub': 100, 'dim': 2,
-			  'kwargs': {'Xtrain': Xtrain, 'Ytrain': Ytrain,
-			  			 'Xtest': Xtest, 'Ytest': Ytest}}
+		'kwargs': {'Xtrain': Xtrain, 'Ytrain': Ytrain,
+			  'Xtest': Xtest, 'Ytest': Ytest}}
   
 3. 设置优化器需要的参数信息：
   parms_gwo = {'opter_name': 'GWO', 'PopSize': 20, 'Niter': 100}
