@@ -20,7 +20,7 @@
     Ypre = mdl.predict(Xtest)
     error = 1 - metrics.accuracy_score(Ytest, Ypre)
     
-    return error	
+    return error
 
 2. 设置目标函数中待优化参数信息，假设我们x为100维，每个维度在[-10， 10]范围内取值，则目标函数参数信息设置为：
   parms_func = {'x_lb': 0.01, 'x_ub': 100, 'dim': 2,
